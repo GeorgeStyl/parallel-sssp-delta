@@ -56,9 +56,9 @@ A verification tool that performs a line-by-line comparison of the output distan
 gcc -O3 -o delta_parallel main.c -lpthread -lm
 
 ### Execution
-```bash
+```
 ./delta_parallel <graph_file> <source_node> <delta_value>
 
 # Memory validation
-```bash
+```
 valgrind --leak-check=full --show-leak-kinds=all ./delta_parallel <graph_file> 0 10.0
